@@ -31,20 +31,26 @@ void Union_set(int p1, int p2)
     int size1 = set_size[p1];
     int size2 = set_size[p2];
 
-    if (size1 >= size2)
-    {
-        parent_node[p2] = p1;
-        set_size[p1] += set_size[p2];
-        set_size[p2]=0;
-        cout<<set_size[p1]<<"\n";
-    }
-    else
-    {
-        parent_node[p1] = p2;
-        set_size[p2] += set_size[p1];
-        set_size[p1]=0;
-        cout<<set_size[p2]<<"\n";
-    }
+
+    //집합 union하는 방향을 설정하지 않아도 된다.
+    // if (size1 >= size2)
+    // {
+    //     parent_node[p2] = p1;
+    //     set_size[p1] += set_size[p2];
+    //     set_size[p2]=0;
+    //     cout<<set_size[p1]<<"\n";
+    // }
+    // else
+    // {
+    //     parent_node[p1] = p2;
+    //     set_size[p2] += set_size[p1];
+    //     set_size[p1]=0;
+    //     cout<<set_size[p2]<<"\n";
+    // }
+    parent_node[p2] = p1;
+    set_size[p1] += set_size[p2];
+    set_size[p2]=0;
+    cout<<set_size[p1]<<"\n";
 }
 
 int main(void)
