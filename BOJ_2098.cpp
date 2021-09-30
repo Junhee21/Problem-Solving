@@ -1,7 +1,6 @@
 //21 09 30
 
 #include <iostream>
-#include <bitset>
 using namespace std;
 
 int n;
