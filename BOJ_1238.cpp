@@ -62,8 +62,6 @@ int whoMost()
     return answer_list.top();
 }
 
-
-
 int main(void)
 {
     ios_base::sync_with_stdio(0);
