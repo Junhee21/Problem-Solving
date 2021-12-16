@@ -11,9 +11,9 @@ int main(void)
     int n, k;
     cin >> n >> k;
 
-    for (int i=0; i<n; i++)
+    for (int i = 0; i < n; i++)
     {
-        arr.push_back(i+1);
+        arr.push_back(i + 1);
     }
 
     cout << "<";
@@ -22,17 +22,17 @@ int main(void)
 
     while (1)
     {
-        if ((int)arr.size() == i+1)
+        if ((int)arr.size() == i + 1)
         {
-            cout << arr.back() <<">";
+            cout << arr.back() << ">";
             break;
         }
-        if (i % k == k-1)
-            cout << arr[i] <<", ";
+        if (i % k == k - 1)
+            cout << arr[i] << ", ";
         else
             arr.push_back(arr[i]);
-        i ++;
+        i++;
     }
-    
+
     return 0;
 }
