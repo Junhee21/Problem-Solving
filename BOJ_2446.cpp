@@ -18,8 +18,6 @@ int main(void)
             cout << " ";
         for (int j = 0; j < 2 * n - 1 - 2 * empty; j++)
             cout << "*";
-        for (int j = 0; j < empty; j++)
-            cout << " ";
         cout << "\n";
     }
     return 0;
