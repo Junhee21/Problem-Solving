@@ -91,15 +91,14 @@ bool isDivided(void)
 
 int solve(void)
 {
-    for (int i = 1; true; i++)
+    for (int i = 1; totalNum>0; i++)
     {
-        if (totalNum == 0)
-            return 0;
         melt();
         bool b = isDivided();
         if (b)
             return i;
     }
+    return 0;
 }
 
 int main(void)
