@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 class Kakao_2021_blind_03 {
   public int solution(int n, int s, int a, int b, int[][] fares) {
     Edges edges = new Edges(n, s, a, b, fares);
